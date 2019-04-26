@@ -1,0 +1,95 @@
+.slick-slide img {max-width: 100%;}
+.slick-next {right:25px;}
+.slick-prev {left:25px; z-index: 1;}
+.slick-dots {bottom:25px; z-index: 1;}
+.slick-dots li.slick-active button:before, .slick-dots li button:before {color:#2772e7;}
+
+.main-slider-1{
+    background-image: url(../images/main-slider/img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    display: flex !important;
+    align-items: center;
+}
+
+.main-slider-2{
+    background-image: url(../images/main-slider/img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    display: flex !important;
+    align-items: center;
+}
+
+.main-slider-3{
+    background-image: url(../images/main-slider/img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    display: flex !important;
+    align-items: center;
+}
+
+.main-slider-4{
+    background-image: url(../images/main-slider/img1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    display: flex !important;
+    align-items: center;
+}
+
+.slide-content {
+    width: 30%;
+    position: relative;
+    padding: 15px;
+    
+}
+
+.btn-one {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    background: #2772e7;
+    padding: 13px 30px 12px 30px;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    position: relative;
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    z-index: 1;
+    border-radius: 25px;
+    border: none;
+}
+
+
+/** main-slider **/
+.slider-inner { display: flex;}
+.slider-inner h2 { font-size:52px; color:#2672e9; text-transform: uppercase; font-weight: bold; letter-spacing: 7px;}
+.slider-inner h4 { font-size:18px; text-align:left; color:#093075; margin-top:10px; text-transform: uppercase;}
+.slider-inner p { font-size:14px; text-align: left; color:#8d8d8d;}
+
+@media only screen and (max-width: 991px){
+.header-upper {display: none;}
+}
+
+@media only screen and (max-width: 767px){
+    .slider-inner h2 { font-size: 24px; line-height: 28px; letter-spacing: 0;}
+    .slide-content { width: 80%; margin: 20px auto 20px auto;}
+    .slider-inner p { font-size: 12px; line-height: 18px; color: #8d8d8d;}
+}
+    
+@media only screen and (max-width: 599px){
+    .main-slider .btn-two { display: block; margin-left: 0px; margin-top: 10px;}
+}

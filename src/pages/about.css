@@ -1,0 +1,26 @@
+.content-part {background: #2a2d31; color: #ffffff; height: 100vh; padding-top: 100px; text-align: center; }
+.about-title {margin-bottom: 20px;}
+.about-title p {font-size: 23px; font-weight: 200;}
+.about-title .btn-one {font-weight: 700;}
+.detail-title {font-size: 20px; font-weight: 700; padding: 10px 13px;}
+.detail-title span {color: #2672e9;}
+.dfpad {padding: 16px 13px;}
+.content-part .card-box {
+    position: relative;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -khtml-box-shadow: none;
+    border-radius: 18px;
+    -moz-border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -khtml-border-radius: 18px;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+
+.about-banner {background-image: url(../images/about-banner.jpg); background-size: cover;}
