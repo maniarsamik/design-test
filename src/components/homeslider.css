@@ -80,6 +80,23 @@
 .slider-inner h4 { font-size:18px; text-align:left; color:#093075; margin-top:10px; text-transform: uppercase;}
 .slider-inner p { font-size:14px; text-align: left; color:#8d8d8d;}
 
+.slider-inner .item.slick-active h2{
+    animation:fadeInLeft 1s both 1.5s;
+  }
+
+.slick-slider .item.slick-active p, .slider-inner .item.slick-active h4{
+    animation:Slick-FastSwipeIn 1s both;
+  }
+
+/* ==== Slider Image Transition === */
+@keyframes Slick-FastSwipeIn{
+    0%{transform:rotate3d(0,1,0,150deg) scale(0)  perspective(400px);} 
+    100%{transform:rotate3d(0,1,0,0deg) scale(1) perspective(400px);} 
+}
+
+@-webkit-keyframes ProgressDots{from{width:0px;}to{width:100%;}}
+@keyframes ProgressDots{from{width:0px;}to{width:100%;}}
+
 @media only screen and (max-width: 991px){
 .header-upper {display: none;}
 }
@@ -93,3 +110,4 @@
 @media only screen and (max-width: 599px){
     .main-slider .btn-two { display: block; margin-left: 0px; margin-top: 10px;}
 }
+
