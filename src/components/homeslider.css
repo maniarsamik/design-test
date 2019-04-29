@@ -52,7 +52,7 @@
     width: 30%;
     position: relative;
     padding: 15px;
-    
+    margin-left: 10%;
 }
 
 .btn-one {
@@ -62,7 +62,7 @@
     color: #fff;
     background: #2772e7;
     padding: 13px 30px 12px 30px;
-    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Oxygen","Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: 'Poppins', sans-serif;
     position: relative;
     transition: all 0.5s ease 0s;
     cursor: pointer;
@@ -76,7 +76,7 @@
 
 /** main-slider **/
 .slider-inner { display: flex;}
-.slider-inner h2 { font-size:52px; color:#2672e9; text-transform: uppercase; font-weight: bold; letter-spacing: 7px;}
+.slider-inner h2 { font-size:52px; color:#2672e9;  font-weight: bold;}
 .slider-inner h4 { font-size:18px; text-align:left; color:#093075; margin-top:10px; text-transform: uppercase;}
 .slider-inner p { font-size:14px; text-align: left; color:#8d8d8d;}
 
