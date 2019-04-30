@@ -1,4 +1,4 @@
-.slick-slide img {max-width: 100%;}
+
 .slick-next {right:25px;}
 .slick-prev {left:25px; z-index: 1;}
 .slick-dots {bottom:25px; z-index: 1;}
@@ -27,7 +27,7 @@
 }
 
 .main-slider-3{
-    background-image: url(../images/main-slider/img1.jpg);
+    background-image: url(../images/main-slider/img3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,7 +38,7 @@
 }
 
 .main-slider-4{
-    background-image: url(../images/main-slider/img1.jpg);
+    background-image: url(../images/main-slider/img4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,7 +55,7 @@
     margin-left: 10%;
 }
 
-.btn-one {
+.slider-inner .btn-one {
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
@@ -71,20 +71,23 @@
     z-index: 1;
     border-radius: 25px;
     border: none;
+    
 }
 
-
+.slick-active .slider-inner .btn-one {animation:fadeInUp 1s both;}
 /** main-slider **/
 .slider-inner { display: flex;}
 .slider-inner h2 { font-size:52px; color:#2672e9;  font-weight: bold;}
 .slider-inner h4 { font-size:18px; text-align:left; color:#093075; margin-top:10px; text-transform: uppercase;}
 .slider-inner p { font-size:14px; text-align: left; color:#8d8d8d;}
-
-.slider-inner .item.slick-active h2{
-    animation:fadeInLeft 1s both 1.5s;
+.slick-active .slider-inner  h2{
+    animation:fadeInLeft 1s both 0.3s;
   }
 
-.slick-slider .item.slick-active p, .slider-inner .item.slick-active h4{
+.slick-active .slider-inner h4 {
+    animation:Slick-FastSwipeIn 1s both;
+  }
+  .slick-active .slider-inner p{
     animation:Slick-FastSwipeIn 1s both;
   }
 
@@ -96,6 +99,74 @@
 
 @-webkit-keyframes ProgressDots{from{width:0px;}to{width:100%;}}
 @keyframes ProgressDots{from{width:0px;}to{width:100%;}}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+
 
 /* slider image start*/
 .main-banner .banner-image.single-banner-image img {
@@ -328,9 +399,49 @@
       -webkit-transform: translate(0px, 0px) rotate(0deg);
     }
   }
+.banner-text { align-items: center; display: flex}
+  .up_animat {
+    animation: float-bob-y infinite 2s linear;
+}
+
+  @keyframes float-bob-y {
+    0% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  
+    50% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  }
+  
+  @keyframes float-bob-x {
+    0% {
+      -webkit-transform: translateX(-100px);
+      transform: translateX(-100px);
+    }
+  
+    50% {
+      -webkit-transform: translateX(-10px);
+      transform: translateX(-10px);
+    }
+  
+    100% {
+      -webkit-transform: translateX(-100px);
+      transform: translateX(-100px);
+    }
+  }
+
 /*slider image end */
 @media only screen and (max-width: 991px){
 .header-upper {display: none;}
+.slick-slide img {max-width: 100%;}
 }
 
 @media only screen and (max-width: 767px){
