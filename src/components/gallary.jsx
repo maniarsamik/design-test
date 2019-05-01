@@ -19,6 +19,9 @@ class PortfolioGallary extends React.Component {
             this.iso = new Isotope('#filter-container', {
                 itemSelector: '.filter-item',
                 layoutMode: "fitRows",
+                fitRows: {
+                    gutter: 10
+                  }
 
             });
         }
@@ -32,7 +35,7 @@ class PortfolioGallary extends React.Component {
 
 
     render() {
-        const node = ReactDOM.findDOMNode(this);
+        
         return (
             <div>
                 <div className="d-flex">
@@ -45,7 +48,7 @@ class PortfolioGallary extends React.Component {
                         </ul>
                     
                 </div>
-                <div id="filter-container">
+                <div id="filter-container" data-isotope='{ "itemSelector": ".filter-item", "layoutMode": "fitRows" }'>
                     <div className='filter-item filter-one'>
                         <div className="portfolio-box">
                             <div className="portfolio-item">

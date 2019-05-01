@@ -1,4 +1,6 @@
-::-mozkit-scrollbar {display:none;}
+::-webkit-scrollbar {
+    display: none;
+    }
 .content-part {background: #2a2d31; height: 100vh; overflow: auto; padding:100px 30px 30px 30px;}
 .about-text {margin-bottom: 50px; text-align: center;}
 .about-text p {font-size: 23px; font-weight: 300; }
