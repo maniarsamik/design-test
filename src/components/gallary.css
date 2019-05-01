@@ -1,0 +1,43 @@
+.filter-container {
+    padding: 15px 0;
+  }
+  .filter-item {width: 50%;}
+
+  
+  #portfolio-flters li {
+    margin-right: 6px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding: 4px 15px;
+    border-radius: 50px;
+    display: inline-block;
+    font-weight: 900;
+    cursor: pointer;
+  }
+  
+  #portfolioFilter a.current {
+    background: #1e1e1e;
+    border: 1px solid #1e1e1e;
+    color: #f9f9f9;
+  }
+  .portfolio-item img {
+    position: relative;
+    border-radius: 18px 18px 0 0;
+    max-width: 100%;
+}
+ .portfolio-box {position: relative; padding: 0 0 0 0; margin-bottom: 20px; background: rgba(255, 255, 255, 0.05);border-radius: 18px; -moz-border-radius: 18px; -webkit-border-radius: 18px; -khtml-border-radius: 18px; text-align: center}
+  .portfolio-part .desc {padding: 15px;}
+  .portfolio-part .desc .name {
+    margin: 0;
+    display: block;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+
+  @media screen and (max-width: 768px) {
+    /* 5 columns for larger screens */
+    .filter-item {width: 100%;}
+  }

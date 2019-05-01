@@ -1,0 +1,19 @@
+.headertext-bg {
+    position: relative;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-size: 120px;
+    line-height: 120px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-align: center;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0.05;
+}
+
+.portfolio-banner {background-image: url(../images/product-banner.jpg); background-size: cover; background-position: 45%;}
