@@ -11,7 +11,7 @@ class Portfolio extends Component {
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col-sm-6 content-part">
-                                <div className="about-text">
+                                <div className="lighttitle-text">
                                     <div className="headertext-bg">portfolio</div>
                                 </div>
                                 <div className="row mb-5">
