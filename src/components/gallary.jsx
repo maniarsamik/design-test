@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import './gallary.css';
 import Isotope from "isotope-layout/js/isotope";
 import port1 from '../images/main-slider/portfolio/port_image1.jpg';
@@ -10,9 +9,8 @@ class PortfolioGallary extends React.Component {
     constructor(props) {
         super(props);
         this.onFilterChange = this.onFilterChange.bind(this);
-
     }
-
+    componentDidMount() { this.onFilterChange("*") };
     // Click Function
     onFilterChange = (newFilter) => {
         if (this.iso === undefined) {
@@ -20,8 +18,8 @@ class PortfolioGallary extends React.Component {
                 itemSelector: '.filter-item',
                 layoutMode: "fitRows",
                 fitRows: {
-                    gutter: 10
-                  }
+                    gutter: 15
+                }
 
             });
         }
@@ -32,21 +30,19 @@ class PortfolioGallary extends React.Component {
         }
     }
 
-
-
     render() {
-        
+
         return (
             <div>
                 <div className="d-flex">
-                    
-                        <div className="card-title mr-auto"><span>My</span> portfolio</div>
-                        <ul id="portfolio-flters">
-                            <li data-filter="*" onClick={() => { this.onFilterChange("*") }}>All</li>
-                            <li data-filter="filter-one" onClick={() => { this.onFilterChange("filter-one") }}>One</li>
-                            <li data-filter="filter-two" onClick={() => { this.onFilterChange("filter-two") }}>Two</li>
-                        </ul>
-                    
+
+                    <div className="card-title mr-auto"><span>My</span> portfolio</div>
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" onClick={() => { this.onFilterChange("*") }}>All</li>
+                        <li data-filter="filter-one" onClick={() => { this.onFilterChange("filter-one") }}>One</li>
+                        <li data-filter="filter-two" onClick={() => { this.onFilterChange("filter-two") }}>Two</li>
+                    </ul>
+
                 </div>
                 <div id="filter-container" data-isotope='{ "itemSelector": ".filter-item", "layoutMode": "fitRows" }'>
                     <div className='filter-item filter-one'>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './homeslider.css';
 import Slider from "react-slick";
 import banner2 from '../images/main-slider/bg-images/about_bg-3.png';
