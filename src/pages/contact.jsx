@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from '../components/navbar.jsx';
 import ContactForm from '../components/contactform.jsx';
+import ContactMap from '../components/contactmap.jsx';
 
 import './contact.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -24,7 +25,7 @@ class Contact extends Component {
                                         <div className="col-sm-6">
                                             <div className="contactbox card-box">
                                                 <div className="icon">
-                                                <FontAwesomeIcon icon="map-marker-alt" />
+                                                    <FontAwesomeIcon icon="map-marker-alt" />
                                                 </div>
                                                 <div className="contactinform">
                                                     <div className="name">Address</div>
@@ -35,7 +36,7 @@ class Contact extends Component {
                                         <div className="col-sm-6">
                                             <div className="contactbox card-box">
                                                 <div className="icon">
-                                                    <FontAwesomeIcon icon={['fab', 'facebook']} />
+                                                <FontAwesomeIcon icon="mobile-alt" />
                                                 </div>
                                                 <div className="contactinform">
                                                     <div className="name">Phone</div>
@@ -48,7 +49,7 @@ class Contact extends Component {
                                         <div className="col-sm-6">
                                             <div className="contactbox card-box">
                                                 <div className="icon">
-                                                    <FontAwesomeIcon icon={['fab', 'facebook']} />
+                                                    <FontAwesomeIcon icon="envelope" />
                                                 </div>
                                                 <div className="contactinform">
                                                     <div className="name">Email</div>
@@ -76,7 +77,9 @@ class Contact extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-sm-6 about-banner"></div>
+                            <div className="col-sm-6 no-gutters">
+                                <ContactMap />
+                            </div>
                         </div>
                     </div>
                 </div>
