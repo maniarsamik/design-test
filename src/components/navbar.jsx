@@ -3,11 +3,33 @@ import { Link } from 'react-router-dom';
 import './navbar.css';
 
 class Navbar extends Component {
+    constructor(props) {
+        super(props);
 
+        this.state = {};
+
+        this.handleScroll = this.handleScroll.bind(this);
+    }
+
+    handleScroll() {
+        this.setState({ scroll: window.scrollY });
+    }
+
+    componentDidMount() {
+        const el = document.querySelector('nav');
+        this.setState({ top: el.offsetTop, height: el.offsetHeight });
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    componentDidUpdate() {
+        this.state.scroll > this.state.top ?
+            document.body.style.paddingTop = `${this.state.height}px` :
+            document.body.style.paddingTop = 0;
+    }
 
     render() {
         return (
-            <nav className="navbar navbar-expand-lg fixed-top main-nav-custom">
+            <nav className={this.state.scroll > this.state.top ? "navbar navbar-expand-lg fixed-top bg-black main-nav-custom" : "navbar navbar-expand-lg fixed-top main-nav-custom"}>
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">React website</Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">

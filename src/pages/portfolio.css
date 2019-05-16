@@ -16,5 +16,5 @@
     opacity: 0.05;
 }
 
-.portfolio-banner {background-image: url(../images/product-banner.jpg); background-size: cover; background-position: 45%;}
+.portfolio-banner {background-image: url(../images/product-banner.jpg); background-size: cover; background-position: 45%; height: 100vh; position: fixed; right: 0; top: 0;}
 .lighttitle-text {text-align: center; }

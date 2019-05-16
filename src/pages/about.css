@@ -1,7 +1,7 @@
 ::-webkit-scrollbar {
     display: none;
     }
-.content-part {background: #2a2d31; height: 100vh; overflow: auto; padding:100px 30px 30px 30px;}
+.content-part {background: #2a2d31; min-height: 100vh; overflow: auto; padding:100px 30px 30px 30px;}
 .about-text {margin-bottom: 50px; text-align: center;}
 .about-text p {font-size: 23px; font-weight: 300; }
 .about-text span {color: #2672e9; font-weight: 700;}
@@ -34,4 +34,4 @@
 .content-part .card-item p {margin-bottom: 0;}
 
 
-.about-banner {background-image: url(../images/about-banner.jpg); background-size: cover; background-position: 45%;}
+.about-banner {background-image: url(../images/about-banner.jpg); background-size: cover; background-position: 45%; height: 100vh; position: fixed; right: 0; top: 0;}

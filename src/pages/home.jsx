@@ -11,7 +11,7 @@ import './home.css';
 class Home extends Component {
     render() {
         return (
-            <div className="main-container">
+            <div className="main-container home-menu">
                 <Navbar />
                 <HomeSlider />
                 <div className="shape1"><img src={bgimg1} alt="shape"/></div>
