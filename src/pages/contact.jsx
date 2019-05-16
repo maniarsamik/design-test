@@ -77,7 +77,7 @@ class Contact extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-sm-6 no-gutters">
+                            <div className="col-sm-6 no-gutters main-map">
                                 <ContactMap />
                             </div>
                         </div>
