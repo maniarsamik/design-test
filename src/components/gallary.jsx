@@ -16,10 +16,10 @@ class PortfolioGallary extends React.Component {
         if (this.iso === undefined) {
             this.iso = new Isotope('#filter-container', {
                 itemSelector: '.filter-item',
-                layoutMode: "fitRows",
+                /*layoutMode: "fitRows",
                 fitRows: {
                     gutter: 15
-                }
+                }*/
 
             });
         }
@@ -35,17 +35,15 @@ class PortfolioGallary extends React.Component {
         return (
             <div>
                 <div className="d-flex">
-
                     <div className="card-title mr-auto"><span>My</span> portfolio</div>
                     <ul id="portfolio-flters">
                         <li data-filter="*" onClick={() => { this.onFilterChange("*") }}>All</li>
                         <li data-filter="filter-one" onClick={() => { this.onFilterChange("filter-one") }}>One</li>
                         <li data-filter="filter-two" onClick={() => { this.onFilterChange("filter-two") }}>Two</li>
                     </ul>
-
                 </div>
-                <div id="filter-container" data-isotope='{ "itemSelector": ".filter-item", "layoutMode": "fitRows" }'>
-                    <div className='filter-item filter-one'>
+                <div id="filter-container" className="row" data-isotope='{ "itemSelector": ".filter-item", "layoutMode": "fitRows" }'>
+                    <div className='filter-item filter-one col-6'>
                         <div className="portfolio-box">
                             <div className="portfolio-item">
                                 <img src={port1} alt="" />
@@ -60,7 +58,7 @@ class PortfolioGallary extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className='filter-item filter-two'>
+                    <div className='filter-item filter-two col-6'>
                         <div className="portfolio-box">
                             <div className="portfolio-item">
                                 <img src={port2} alt="" />
@@ -75,7 +73,7 @@ class PortfolioGallary extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className='filter-item filter-one'>
+                    <div className='filter-item filter-one col-6'>
                         <div className="portfolio-box">
                             <div className="portfolio-item">
                                 <img src={port3} alt="" />
@@ -90,7 +88,7 @@ class PortfolioGallary extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className='filter-item filter-two'>
+                    <div className='filter-item filter-two col-6'>
                         <div className="portfolio-box">
                             <div className="portfolio-item">
                                 <img src={port4} alt="" />
@@ -104,7 +102,7 @@ class PortfolioGallary extends React.Component {
                                 </div>
                             </div>
                         </div>
-                    </div><div className='filter-item filter-one'>
+                    </div><div className='filter-item filter-one col-6'>
                         <div className="portfolio-box">
                             <div className="portfolio-item">
                                 <img src={port1} alt="" />
@@ -119,7 +117,7 @@ class PortfolioGallary extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className='filter-item filter-two'>
+                    <div className='filter-item filter-two col-6'>
                         <div className="portfolio-box">
                             <div className="portfolio-item">
                                 <img src={port2} alt="" />

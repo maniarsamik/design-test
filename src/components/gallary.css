@@ -1,7 +1,7 @@
 .filter-container {
     padding: 15px 0;
   }
-  .filter-item {width: 49%;}
+  .filter-item {/*width: 49%;*/}
 
   
   #portfolio-flters li {
