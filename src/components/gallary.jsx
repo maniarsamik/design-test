@@ -10,7 +10,12 @@ class PortfolioGallary extends React.Component {
         super(props);
         this.onFilterChange = this.onFilterChange.bind(this);
     }
-    componentDidMount() { this.onFilterChange("*") };
+    componentDidMount() { this.onFilterChange("*") 
+        setTimeout(function(){
+            document.getElementById("portfolio-flters").children[0].click();
+        }, 120);
+        
+    };
     // Click Function
     onFilterChange = (newFilter) => {
         if (this.iso === undefined) {

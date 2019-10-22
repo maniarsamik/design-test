@@ -14,8 +14,8 @@ class About extends Component {
                         <div className="row">
 
                             <div className="col-sm-6 content-part ">
-                                <div class="lighttitle-text">
-                                    <div class="headertext-bg">About</div>
+                                <div className="lighttitle-text">
+                                    <div className="headertext-bg">About</div>
                                 </div>
                                 <div className="about-text">
                                     <p><span>Hello, I’m a Patrick,</span> web-developer based on Paris.<br></br>
